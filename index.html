@@ -1,39 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css_index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
     <title>Dentista Profesional</title>
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li class="header_li"><a href="#inicio">Inicio</a></li>
+                <li class="header_li"><a href="servicios.html">Servicios</a></li>
+                <li class="header_li"><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <div id="inicio" class="sec">
-        <div class="contacto">
-            <h1>Bienvenido a la Clínica Dental</h1>
-            <p>Tu sonrisa es nuestra prioridad.</p>
+    <div class="contenedor">
+        <div id="inicio" class="sec izq">
+            <div>
+                <h2>Bienvenido a la Clínica Dental</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
         </div>
-    </div>
 
-    <div id="servicios" class="sec">
-        <div class="contacto">
-            <h2>Nuestros Servicios</h2>
-            <ul>
-                <li class="serv">Limpieza Dental</li>
-                <li class="serv">Empastes</li>
-                <li class="serv">Extracciones</li>
-                <li class="serv">Implantes</li>
+        <div id="servicios" class="sec der">
+            <div>
+                <h2>Nuestros Servicios</h2>
+                <p class="serv_text">¡Bienvenido a mi clínica dental! En mi compromiso por cuidar tu salud bucal, ofrezco una amplia gama de servicios dentales de
+                    alta calidad para toda la familia. <br><br>
+                    Entre los servicios se incluyen:</p>
+                    
+                <div class="serv-link-center"><a href="servicios.html" class="serv_link">Ver servicios</a></div>
                 
-            </ul>
+                <!-- <ul>
+                    <li class="serv">Limpieza Dental</li>
+                        <li class="serv">Empastes</li>
+                        <li class="serv">Extracciones</li>
+                        <li class="serv">Implantes</li>
+                </ul> -->
+            </div>
         </div>
     </div>
 
@@ -51,4 +67,5 @@
 
     <script src="index_script.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
@@ -8,7 +8,14 @@ body {
 header {
     background-color: #18d2bf;
     color: white;
-    padding: 1rem;
+    padding: 0.8rem;
+}
+
+header nav ul li {
+    margin-left:3em;
+    margin-right:3em;
+    font-size:1em;
+    font-weight:bold;
 }
 
 nav ul {
@@ -28,8 +35,30 @@ nav a {
     color: white;
     transition: color 0.3s;
 }
+
+nav a:hover {
+    color: #07645b;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between; 
+    margin: 50px;
+
+}
+
 .sec {
-    padding: 4rem 0;
+    flex: 1;
+    border: 1px solid #009688; 
+    padding: 20px; 
+    margin:50px;
+    box-shadow: 0 4px 8px #0a998b9a;
+    border-radius:0.2em;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h2 {
+    font-size:2em;
     text-align: center;
 }
 
@@ -41,7 +70,9 @@ footer {
 }
 .serv{
     list-style: none;
+    font-size:1.2em
 }
+
 .contacto {
     max-width: 800px;
     margin: 0 auto;
@@ -49,7 +80,7 @@ footer {
     padding: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-}
+} /* se puede comentar */
 
 .contact-link {
     color: #3498db;
@@ -58,4 +89,34 @@ footer {
 
 .contact-link:hover {
     color: #e74c3c;
+}
+
+.serv_text {
+    margin-top:3em;
+    margin-left:2em;
+    margin-right:2em;
+    text-align: justify;
+    line-height: 1.6em;
+    word-spacing: 1px;
+}
+
+a.serv_link {
+    font-size:1.27em;
+    text-decoration: none;
+    color:#07645b;
+    font-weight:bold;
+    transition:0.5s;
+    text-align: center;
+}
+
+.serv_link:hover {
+    background-color: #00968749;
+    border-radius:0.5em;
+    padding:5px;
+    transition:0.5s;
+}
+
+.serv-link-center {
+    text-align:right;
+    margin-right: 5em;
 }

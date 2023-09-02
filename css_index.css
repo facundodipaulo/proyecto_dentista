@@ -51,7 +51,7 @@ nav a:hover {
     flex: 1;
     border: 1px solid #009688; 
     padding: 20px; 
-    margin:50px;
+    margin:35px;
     box-shadow: 0 4px 8px #0a998b9a;
     border-radius:0.2em;
     font-family: 'Nunito Sans', sans-serif;
@@ -73,14 +73,14 @@ footer {
     font-size:1.2em
 }
 
-.contacto {
+/* .contacto {
     max-width: 800px;
     margin: 0 auto;
     background-color: white;
     padding: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-} /* se puede comentar */
+} se puede comentar */
 
 .contact-link {
     color: #3498db;

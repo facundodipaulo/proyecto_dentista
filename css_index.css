@@ -99,8 +99,12 @@ footer {
     line-height: 1.6em;
     word-spacing: 1px;
 }
+.serv_text2{
+    text-align: center;
+}
 
 a.serv_link {
+    
     font-size:1.27em;
     text-decoration: none;
     color:#07645b;
@@ -120,3 +124,89 @@ a.serv_link {
     text-align:right;
     margin-right: 5em;
 }
+
+/* Estilos del libro */
+.book-container {
+    flex: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .book {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transform-origin: top right;
+    backface-visibility: hidden;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Transiciones */
+  #page1 {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  
+  #page2 {
+    transform: perspective(1000px) rotateY(-180deg);
+  }
+  
+  #page3 {
+    transform: perspective(1000px) rotateY(-360deg);
+  }
+  
+  .controls {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+  }
+  
+  #div_img_1{
+    text-align: center;
+  }
+  #pag_1_img_1{
+    width: 100px; 
+    height: auto;
+  }
+
+  #prevBtn {
+    padding: 10px 5px 3000px;
+    font-size: 19px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff00;
+    color: rgba(0, 0, 0, 0.515);
+    transition: 0.3s ease;
+  }
+  
+  #prevBtn:hover {
+    color: black;
+    font-weight: bold;
+  }
+  
+  #nextBtn {
+    padding: 10px 0px 3000px;
+    font-size: 19px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff00;
+    color: rgba(0, 0, 0, 0.515);
+    transition: 0.3s ease;
+    margin-left: 450px;
+  }
+  
+  #nextBtn:hover {
+    color: black;
+    font-weight: bold;
+  }
+  

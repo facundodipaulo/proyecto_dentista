@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css_index.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css_map.css">
     <title>Dentista Profesional</title>
 </head>
 
@@ -22,7 +23,7 @@
     </header>
 
     <div class="contenedor">
-        <div id="inicio" class="sec izq">
+        <div id="inicio" class="sec">
             <div>
                 <h2>Bienvenido a la Clínica Dental</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -34,7 +35,7 @@
             </div>
         </div>
 
-        <div id="servicios" class="sec der">
+        <div id="servicios" class="sec">
             <div>
                 <h2>Nuestros Servicios</h2>
                 <p class="serv_text">¡Bienvenido a mi clínica dental! En mi compromiso por cuidar tu salud bucal, ofrezco una amplia gama de servicios dentales de
@@ -53,12 +54,21 @@
         </div>
     </div>
 
-    <div id="contact" class="sec">
-        <div class="contacto">
-            <h2>Contacto</h2>
-            <p>Para programar una cita, llámanos al: <strong>telefonoxd</strong></p>
-            <p>O envíanos un correo electrónico a: <a href="#" class="contact-link">mail@gmail.com</a></p>
+    <div class="contenedor">
+        
+        <div class="sec">
+            <div class="map-title">Me encuentro en:</div>
+           <div id="map"></div>
         </div>
+
+        <div id="contact" class="sec">
+            <div>
+                <h2>Contacto</h2>
+                <p>Para programar una cita, llámanos al: <strong>telefonoxd</strong></p>
+                <p>O envíanos un correo electrónico a: <a href="#" class="contact-link">mail@gmail.com</a></p>
+            </div><br><br><br><br><br><br><br><br>
+        </div>
+
     </div>
 
     <footer>
@@ -66,6 +76,10 @@
     </footer>
 
     <script src="index_script.js"></script>
+    <script src="map_script.js"></script>
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCFwwh15KxPCqHiKr-xZcqhtuGxKjOpP4&libraries=places&callback=initMap">
+</script>
 </body>
 
 </html>

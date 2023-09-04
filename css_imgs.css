@@ -1,0 +1,23 @@
+.img-contacts {
+    width:3em;
+    display:inline-block;
+    margin-left:0.6em;
+    margin-right:0.6em;
+    height:3em;
+    cursor: pointer;
+}
+
+#imgs {
+    display:flex;
+    justify-content:space-between;
+    margin: 0 2em;
+    border: 2px solid #31b8aac0;
+    padding:1em;
+    border-left: 0;
+    border-right: 0;
+
+}
+
+#contact-info {
+    text-align:center;
+}

@@ -49,11 +49,11 @@ nav a:hover {
 
 .sec {
     flex: 1;
-    border: 1px solid #009688; 
+    border: 6px solid #009688; 
     padding: 20px; 
     margin:35px;
-    box-shadow: 0 4px 8px #0a998b9a;
-    border-radius:0.2em;
+    box-shadow: 0 6px 10px #0a998b9a;
+    border-radius:2em;
     font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -195,7 +195,7 @@ a.serv_link {
   }
   
   #nextBtn {
-    padding: 10px 0px 3000px;
+    /* padding: 10px 0px 3000px; */
     font-size: 19px;
     cursor: pointer;
     border: none;

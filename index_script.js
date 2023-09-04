@@ -31,3 +31,48 @@ function updatePage() {
 }
 
 updatePage();
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+  const contactInfo = document.getElementById("contact-info");
+  const emailImg = document.getElementById("email-img");
+  const linkedinImg = document.getElementById("linkedin-img");
+  const githubImg = document.getElementById("github-img");
+
+  emailImg.addEventListener("click", () => {
+    contactInfo.innerHTML = "Se muestra info de email";
+    emailImg.style.opacity = 1;
+    linkedinImg.style.opacity = 0.15;
+    githubImg.style.opacity = 0.15;
+  })
+
+  linkedinImg.addEventListener("click", () => {
+    contactInfo.innerHTML = "Se muestra info de linkedin";
+    linkedinImg.style.opacity = 1;
+    emailImg.style.opacity = 0.15;
+    githubImg.style.opacity = 0.15;
+  })
+
+  githubImg.addEventListener("click", () => {
+    contactInfo.innerHTML = "Se muestra info de github";
+    githubImg.style.opacity = 1;
+    emailImg.style.opacity = 0.15;
+    linkedinImg.style.opacity = 0.15;
+  })
+})
+
+/* document.addEventListener("DOMContentLoaded", () => {
+  const contactInfo = document.getElementById("contact-info");
+  const imgElements = document.querySelectorAll(".img-contacts");
+
+  imgElements.forEach((img) => {
+    img.addEventListener("click", () => {
+      const imgId = img.id;
+      contactInfo.innerHTML = `Se muestra info de ${imgId}`;
+      imgElements.forEach((otherImg) => {
+        otherImg.style.opacity = otherImg.id === imgId ? 1 : 0.15;
+      });
+    });
+  });
+}); */
